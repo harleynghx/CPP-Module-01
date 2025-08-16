@@ -2,9 +2,9 @@
 
 int main() {
 
-    Zombie* zombie1 = newZombie("Foo");
-    zombie1->announce();
-    delete zombie1;
+    Zombie* zombie = newZombie("Foo");
+    zombie->announce();
+    delete zombie;
 
     // Stack allocation (auto-destroyed)
     randomChump("Bar");

@@ -7,14 +7,14 @@
 class Zombie
 {
 private:
-    std::string name;
+    std::string zombieName;
 public:
-    Zombie(std::string name);
+    Zombie(std::string zombieName);
     ~Zombie();
     void announce();
 };
 
-Zombie* newZombie(std::string name);
-void randomChump(std::string name);
+Zombie* newZombie(std::string zombieName);
+void randomChump(std::string zombieName);
 
 #endif
