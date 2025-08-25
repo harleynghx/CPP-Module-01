@@ -7,7 +7,7 @@ void HumanB::setWeapon(Weapon& weapon) {
     this->weaponB = &weapon;
 }
 
-void HumanB::attack() const {
+void HumanB::attackB() const {
     if (weaponB) {
         std::cout << nameB << " attacks with their " << weaponB->getType() << std::endl;
     } else {
