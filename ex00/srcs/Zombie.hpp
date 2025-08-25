@@ -7,18 +7,15 @@
 class Zombie
 {
 private:
-    std::string zombieName;
+    std::string name;
 public:
-    Zombie(std::string name) : zombieName(name) {}
-    ~Zombie() {
-        std::cout << zombieName << " has been destryed." << std::endl;
-    }
-    void announce() {
-        std::cout << zombieName << ": BraiiiiiiinnnzzzZ..." << std::endl;
-    }
+    Zombie(std::string name);
+    ~Zombie();
+    void announce();
 };
 
-Zombie* newZombie(std::string zombieName);
-void randomChump(std::string zombieName);
+// Function prototypes
+Zombie* newZombie(std::string name);
+void randomChump(std::string name);
 
 #endif
