@@ -2,7 +2,7 @@ NAME = weapon
 
 SRC_DIR = ./srcs
 OBJ_DIR = obj
-SRCS = $(SRC_DIR)/main.cpp $(SRC_DIR)/HumanA.cpp $(SRC_DIR)/HumanA.hpp $(SRC_DIR)/HumanB.cpp $(SRC_DIR)/HumanB.hpp $(SRC_DIR)/Weapon.cpp $(SRC_DIR)/Weapon.hpp
+SRCS = $(SRC_DIR)/main.cpp $(SRC_DIR)/HumanA.cpp $(SRC_DIR)/HumanB.cpp $(SRC_DIR)/Weapon.cpp
 OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
 
 CXX = c++
