@@ -30,7 +30,6 @@ Harl::ComplaintLevel Harl::levels[4] = {
 void Harl::complain( std::string level ) {
     for (int i = 0; i < 4; i++) {
         if (level == levels[i].level) {
-            // Call the appropriate member function using pointer
             (this->*levels[i].function)();
             return;
         }

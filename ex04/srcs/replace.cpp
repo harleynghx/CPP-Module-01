@@ -5,7 +5,7 @@ void FileReplacer::replaceInFile(const std::string& filename,
                                const std::string& s1, 
                                const std::string& s2) {
     // Open input file
-    std::ifstream inputFile(filename.c_str());
+    std::ifstream inputFile(filename.c_str()); //?
     if (!inputFile.is_open()) {
         std::cerr << "Error: Could not open file " << filename << std::endl;
         return;

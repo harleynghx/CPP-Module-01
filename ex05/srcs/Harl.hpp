@@ -12,12 +12,12 @@ private:
     void error( void );
     
     // Typedef for pointer to member function
-    typedef void (Harl::*ComplaintFunction)();
+    // typedef void (Harl::*ComplaintFunction)();
     
     // Struct to map level strings to member functions
     struct ComplaintLevel {
         std::string level;
-        ComplaintFunction function;
+        void (Harl::*function) ();
     };
     
     static ComplaintLevel levels[4];
