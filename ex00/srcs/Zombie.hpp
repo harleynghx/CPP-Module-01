@@ -4,17 +4,15 @@
 #include <string>
 #include <iostream>
 
-class Zombie
-{
+class Zombie {
 private:
-    std::string name;
+    std::string _name;
 public:
     Zombie(std::string name);
     ~Zombie();
     void announce();
 };
 
-// Function prototypes
 Zombie* newZombie(std::string name);
 void randomChump(std::string name);
 
